@@ -52,6 +52,10 @@ export default {
     width: 1.5rem;
     height: 1.5rem;
   }
+
+  .header-icons {
+    margin-left: 2rem;
+  }
 }
 
 @media (max-width: 375px) {
