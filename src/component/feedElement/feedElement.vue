@@ -38,8 +38,8 @@ export default {
     feedAuthor, feedButtons, toggler, feedContainer
   },
   methods: {
-    handler() {
-      this.showIssues = !this.showIssues;
+    handler(issuesStatus) {
+      issuesStatus ? this.showIssues = true : this.showIssues = false
     }
   }
 }

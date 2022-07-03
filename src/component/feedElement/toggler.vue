@@ -20,7 +20,7 @@ export default {
     changeState(e) {
       this.issuesStatus = !this.issuesStatus;
       e.target.classList.toggle('toggler_true');
-      this.$emit("test");
+      this.$emit("test", this.issuesStatus);
 
     }
   }
