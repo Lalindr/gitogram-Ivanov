@@ -54,7 +54,7 @@ export default {
   }
 
   .header-icons {
-    margin-left: 2rem;
+    margin-left: 4rem;
   }
 }
 
