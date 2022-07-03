@@ -15,11 +15,17 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: "Inter";
+  src: url('./fonts/inter-light-webfont.woff') format('woff');
+  src: url('./fonts/inter-light-webfont.woff2') format('woff2');
+}
+
 #app {
-  @font-face {
-    font-family: "Inter";
-    src: url('./fonts/inter-light-webfont.woff') format('woff');
-    src: url('./fonts/inter-light-webfont.woff2') format('woff2');
-  }
+  font-family: "Inter",
+    Verdana,
+    Geneva,
+    sans-serif;
+
 }
 </style>

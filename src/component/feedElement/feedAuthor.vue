@@ -1,18 +1,21 @@
 <template>
   <div class="profile-pic">
-    <img class="profile-pic__img" :src=authorPic>
+    <img class="profile-pic__img" :src="joshua">
     <h4 class="profile-pic__h4">joshua_i</h4>
   </div>
 </template>
 
 <script>
-import authorPic from '../../img/avatars/Andrew | Piter.png';
+import joshua from '../../img/avatars/Andrew | Piter.png';
+import camile from '../../img/avatars/Camile.png'
 
 export default {
   name: "feed-author",
   data() {
     return {
-      authorPic: authorPic,
+      name: '',
+      joshua: joshua,
+      camile: camile,
     }
   }
 }

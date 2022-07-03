@@ -1,25 +1,25 @@
 <template>
   <div class='feed-element'>
-    <feedAuthor />
+    <feedAuthor :name="authorName" />
     <feedContainer>
       <template #feed-container>
         <div class="feed-container">
           <div class="feed-container__upper-feed-container">
-            <h1 class="upper-feed-container__h1">Vue.js</h1>
-            <p class="upper-feed-container__p"><strong>JavaScript</strong> framework for
-              building interactive web
-              applications</p>
+            <h1 class="upper-feed-container__h1">{{ name }}</h1>
+            <div class="upper-feed-container__p" v-html="desc"></div>
           </div>
           <feedButtons />
         </div>
       </template>
     </feedContainer>
-    <toggler @test="handler" />
+    <toggler @test="handler" /><br>
     <div class="toggler-container" v-if=showIssues>
-      <p><strong>Lorem</strong> ipsum dolor sit amet</p>
-      <p><strong>Lorem</strong> ipsum dolor sit amet</p>
-      <p><strong>Lorem</strong> ipsum dolor sit amet</p>
+      <ul>
+        <li v-for="issue in issues" :key="issue" v-html="issue">
+        </li>
+      </ul>
     </div>
+    <span class="feed-element__date">15 may</span>
   </div>
 </template>
 <script>
@@ -29,6 +29,7 @@ import toggler from './toggler.vue';
 import feedContainer from '../../slots/feed-container.vue';
 export default {
   name: "feed-element",
+  props: ['name', 'desc', 'issues'],
   data() {
     return {
       showIssues: false,
@@ -64,6 +65,26 @@ export default {
   align-self: center;
   width: 80%;
   margin-left: 12rem;
+}
+
+.feed-element__date {
+  margin: 1.5rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+ul {
+  padding-left: 1.2rem;
+  padding-bottom: 0.4rem;
+  margin: 0;
+}
+
+li {
+  padding-top: 0.2rem;
+  list-style-type: none;
+}
+
+li strong {
+  margin-right: 0.5rem;
 }
 
 @media (max-width: 768px) {

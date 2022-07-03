@@ -22,7 +22,7 @@ export default {
   background-color: #fafbfc;
   border: 1px solid rgba(27, 31, 35, 0.15);
   box-shadow: inset 0px -1px 0px rgba(27, 31, 35, 0.12);
-  padding: 0 12px;
+  padding: 0 11px;
 
   &:before {
     display: inline-block;

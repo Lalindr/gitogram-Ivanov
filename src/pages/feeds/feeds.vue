@@ -17,8 +17,16 @@
     </headerAvatars>
   </div>
   <div class="wrapper">
-    <feedElement />
-    <feedElement />
+    <feedElement name="Vue.js" desc="<p><strong>JavaScript</strong> framework for building interactive web applications
+
+</p>" :issues="['<strong>joshua_l</strong> Enable performance measuring in production, at the user\'s request',
+'<strong>Camille</strong> It\'s Impossible to Rename an Inherited Slot',
+'<strong>Marselle</strong> transition-group with flex parent causes removed items to fly']" />
+    <feedElement name="React.js"
+      desc="<p><strong>Open source</strong> JavaScript library used for designing user interfaces</p>" :issues="['<strong>joshua_l</strong> Enable performance measuring in production, at the user\'s request',
+      '<strong>Camille</strong> It\'s Impossible to Rename an Inherited Slot',
+      '<strong>Marselle</strong> transition-group with flex parent causes removed items to fly']" />
+
   </div>
 </template>
 
@@ -48,7 +56,6 @@ export default {
 
 <style>
 .wrapper {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
