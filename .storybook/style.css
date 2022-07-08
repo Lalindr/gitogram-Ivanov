@@ -1,0 +1,9 @@
+@font-face{
+  font-family: 'Inter';
+  src: url('../src/fonts/inter-light-webfont.woff') format('woff'),
+  url('../src/fonts/inter-light-webfont.woff2') format('woff2');
+}
+* {
+  font-family: "Inter";
+  margin: 0 auto;
+}

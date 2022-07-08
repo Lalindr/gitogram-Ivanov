@@ -17,8 +17,8 @@ export default {
 <style>
 @font-face {
   font-family: "Inter";
-  src: url('./fonts/inter-light-webfont.woff') format('woff'),
-    url('./fonts/inter-light-webfont.woff2') format('woff2');
+  src: url('./fonts/inter-light-webfont.woff2') format('woff2'),
+    url('./fonts/inter-light-webfont.woff') format('woff');
 }
 
 #app {

@@ -16,9 +16,14 @@ export default {
   name: "gitogram-avatar",
   props: {
     name: String,
+    src: String,
   },
   created() {
-    this.image = images[Object.keys(images).filter(key => key.includes(this.name))];
+    if (!this.src) {
+      this.image = images[Object.keys(images).filter(key => key.includes(this.name))];
+    } else {
+      this.image = this.src;
+    }
   },
   data() {
     return {
@@ -36,7 +41,6 @@ export default {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   gap: 1rem;
 }
 

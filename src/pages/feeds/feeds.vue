@@ -42,7 +42,7 @@ export default {
   name: "gitogram-main",
   data() {
     return {
-      names: ['Josh', 'Andrew', 'Camile', 'Marselle', 'Piter',
+      names: ['Josh', 'andrew', 'Camile', 'Marselle', 'piter',
         'Can', 'Lloveanime', 'Diself', 'Gartor', 'Camilr'],
 
     }

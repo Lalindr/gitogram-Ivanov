@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import joshua from '../../img/avatars/Andrew | Piter.png';
+import joshua from '../../img/avatars/andrew-piter.png'
 import camile from '../../img/avatars/Camile.png'
 
 export default {
