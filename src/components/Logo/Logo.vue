@@ -6,7 +6,7 @@
 
 
 <script>
-import logo from '../../img/Gitogram.png';
+import logo from '@/img/Gitogram.png';
 export default {
   name: "gitogram-logo",
   data() {

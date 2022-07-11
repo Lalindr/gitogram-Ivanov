@@ -34,7 +34,7 @@
 <script>
 import FeedButtons from '../FeedButtons/FeedButtons.vue'
 import Toggler from '../Toggler/Toggler.vue';
-import FeedContainer from '../../../slots/FeedContainer.vue';
+import FeedContainer from '@/slots/FeedContainer.vue';
 import Avatar from '../../Avatar/Avatar.vue'
 export default {
   name: "feed-element",

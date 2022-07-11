@@ -23,12 +23,12 @@
 </template>
 
 <script>
-import Logo from '../../components/Logo/Logo.vue';
-import Icons from '../../components/Icons/Icons.vue';
-import Avatar from '../../components/Avatar/Avatar.vue';
-import FeedElement from '../../components/feedElement/FeedElement/FeedElement.vue'
-import UpperHeader from '../../slots/HeaderUpperHeader.vue';
-import HeaderAvatars from '../../slots/HeaderAvatars.vue';
+import Logo from '@/components/Logo/Logo.vue';
+import Icons from '@/components/Icons/Icons.vue';
+import Avatar from '@/components/Avatar/Avatar.vue';
+import FeedElement from '@/components/feedElement/FeedElement/FeedElement.vue'
+import UpperHeader from '@/slots/HeaderUpperHeader.vue';
+import HeaderAvatars from '@/slots/HeaderAvatars.vue';
 
 export default {
   name: "gitogram-main",

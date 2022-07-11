@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import home from '../../img/home.png';
-import exit from "../../img/exit.png";
-import Avatar from "../../components/Avatar/Avatar.vue";
+import home from '@/img/home.png';
+import exit from "@/img/exit.png";
+import Avatar from "@/components/Avatar/Avatar.vue";
 export default {
   name: 'gitogram-icons',
   data() {
