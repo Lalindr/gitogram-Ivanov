@@ -1,0 +1,33 @@
+.avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .25rem;
+  text-align: center;
+}
+
+
+.avatar_flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: .46rem;
+  padding: 3% 0 1% 0;
+  font-weight: bold;
+
+  .avatar__img {
+    padding: 0;
+  }
+}
+
+.avatar__img {
+  padding: .25rem;
+  border-radius: 360px;
+}
+
+@media (width: 375px) {
+  .avatar__img {
+    width: 60px;
+    height: 60px;
+  }
+}

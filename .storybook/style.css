@@ -3,7 +3,10 @@
   src: url('../src/fonts/inter-light-webfont.woff') format('woff'),
   url('../src/fonts/inter-light-webfont.woff2') format('woff2');
 }
-* {
+body {
   font-family: "Inter";
+  margin: 10px;
+}
+.header-icons {
   margin: 0 auto;
 }

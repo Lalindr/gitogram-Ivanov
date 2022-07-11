@@ -1,15 +1,14 @@
 <template>
-  <feeds>
-  </feeds>
+  <Feeds />
 </template>
 
   <script>
-import feeds from "./pages/feeds/feeds.vue";
+import Feeds from "./pages/Feeds/Feeds.vue";
 import 'normalize.css';
 export default {
   name: 'App',
   components: {
-    feeds,
+    Feeds,
   },
 }
 </script>
@@ -22,10 +21,7 @@ export default {
 }
 
 #app {
-  font-family: "Inter",
-    Verdana,
-    Geneva,
-    sans-serif;
+  font-family: "Inter", Verdana, Geneva, sans-serif;
 
 }
 </style>

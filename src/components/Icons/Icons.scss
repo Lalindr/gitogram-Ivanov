@@ -1,28 +1,3 @@
-<template>
-  <div class="header-icons">
-    <img class="header-icons__home" :src=home>
-    <img class="header-icons__lorem-photo" :src=loremPhoto>
-    <img class="header-icons__exit" :src=exit>
-  </div>
-</template>
-
-<script>
-import home from '../img/home.png';
-import loremPhoto from '../img/lorem-photo.png';
-import exit from "../img/exit.png";
-export default {
-  name: 'gitogram-icons',
-  data() {
-    return {
-      home: home,
-      loremPhoto: loremPhoto,
-      exit: exit,
-    }
-  },
-}
-</script>
-
-<style lang="scss">
 .header-icons {
   display: flex;
   justify-content: flex-end;
@@ -78,4 +53,3 @@ export default {
     height: 1.2rem;
   }
 }
-</style>

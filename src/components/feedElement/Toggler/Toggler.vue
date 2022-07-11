@@ -27,23 +27,5 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.toggler {
-  border: none;
-  background-color: transparent;
-  width: 150px;
-  height: 50px;
-
-  &:after {
-    padding: 0 5px;
-    content: url('../../img/vector/post-Shape.png');
-    display: inline-block;
-  }
-
-}
-
-.toggler_true::after {
-  transform: rotate(180deg);
-  padding-bottom: 2px;
-}
+<style lang="scss" src="./Toggler.scss">
 </style>

@@ -1,0 +1,18 @@
+.logo-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo_block__logo {
+  width: 10rem;
+  height: 6rem;
+}
+
+@media (max-width: 425px) {
+  .logo-block__logo {
+    width: 6.25rem;
+    height: 1.3rem;
+  }
+
+}
