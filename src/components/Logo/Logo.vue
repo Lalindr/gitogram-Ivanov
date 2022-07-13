@@ -8,7 +8,7 @@
 <script>
 import logo from '@/img/Gitogram.png';
 export default {
-  name: "gitogram-logo",
+  name: "GitogramLogo",
   data() {
     return {
       picLogo: logo,

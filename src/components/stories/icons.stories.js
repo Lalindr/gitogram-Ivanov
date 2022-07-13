@@ -1,4 +1,4 @@
-import icons from '../icons.vue';
+import icons from '@/components/Icons/Icons.vue';
 
 export default {
   title: 'icons',

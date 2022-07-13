@@ -1,13 +1,13 @@
 <template>
   <div :class="[flex ? avatarFlex : avatar]">
-    <img :src=attainImage(name) class='avatar__img' :style='imageStyle'>
+    <img :src='attainImage' class='avatar__img' :style='imageStyle'>
     <span class="avatar__name" v-if="showName">{{ name }}</span>
   </div>
 </template>
 
 <script>
 export default {
-  name: "gitogram-avatar",
+  name: "GitogramAvatar",
   data() {
     return {
       imageStyle: {
@@ -35,6 +35,10 @@ export default {
     },
     flex: {
       type: Boolean,
+    },
+    source: {
+      type: String,
+      default: ''
     }
   },
   methods: {
@@ -43,11 +47,17 @@ export default {
       r.keys().map((item) => { images[item.replace('./', '')] = r(item); });
       return images;
     },
-    attainImage(name) {
-      const images = this.importAll(require.context('../../img/avatars', false, /\.png$/));
-      return images[Object.keys(images).filter(key => key.includes(name))];
-    },
   },
+  computed: {
+    attainImage() {
+      if (!this.source) {
+        const images = this.importAll(require.context('../../img/avatars', false, /\.png$/));
+        return images[Object.keys(images).filter(key => key.includes(this.name))];
+      } else {
+        return this.source;
+      }
+    }
+  }
 }
 
 </script>
