@@ -1,0 +1,12 @@
+.sliderbutton {
+  width: 270px;
+  height: 45px;
+  background-color: rgb(49, 174, 84);
+  padding: 11px 109px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+.follow:hover {
+  background-color: #9e9e9e;
+}

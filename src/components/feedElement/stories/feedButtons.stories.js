@@ -1,5 +1,5 @@
 
-import feedButtons from '../feedButtons.vue'
+import feedButtons from '@/components/feedElement/FeedButtons/FeedButtons.vue'
 
 export default {
   title: 'feedButtons',

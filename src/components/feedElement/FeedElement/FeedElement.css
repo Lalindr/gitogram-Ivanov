@@ -17,7 +17,7 @@
   align-self: center;
   display: flex;
   flex-direction: column;
-  min-width: 70%;
+  width: 100%;
 }
 
 .feed-element__date {
@@ -39,8 +39,8 @@ li {
   list-style-type: none;
 }
 
-li strong {
-  margin-right: 0.5rem;
+.desc-title{
+  padding-right: 5px;
 }
 
 li p {

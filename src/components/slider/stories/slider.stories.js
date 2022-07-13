@@ -1,14 +1,16 @@
-import logo from '@/components/Logo/Logo.vue'
 
+import slider from '../Slider/Slider.vue';
 export default {
-  title: 'logo',
-  components: { logo },
+  title: 'slider',
+  components: { slider },
 }
 
 const template = () => ({
-  components: { logo },
-  template: ` <logo />`
-})
+  components: { slider },
+  template: `
+<slider />
+`
+});
 
 export const defaultView = template.bind({});
 

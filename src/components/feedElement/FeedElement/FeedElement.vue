@@ -1,16 +1,16 @@
 <template>
   <div class='feed-element'>
-    <Avatar name="Andrew" size="1.8rem" :showName="true" :flex="true" />
+    <Avatar :name="userData.login" size="1.8rem" :showName="true" :flex="true" :source="userData.avatar" />
     <FeedContainer>
       <template #feed-container>
         <div class="feed-container">
           <div class="feed-container__upper-feed-container">
             <h1 class="upper-feed-container__h1">{{ title }}</h1>
             <div class="upper-feed-container__p">
-              <p><strong>{{ desc_title }}</strong>{{ desc }}</p>
+              <p><strong class="desc-title">{{ desc_title }}</strong>{{ desc }}</p>
             </div>
           </div>
-          <FeedButtons />
+          <FeedButtons :stars="userData.stars" :forks="userData.forks" />
         </div>
       </template>
     </FeedContainer>
@@ -18,7 +18,7 @@
     <div class="toggler-container" v-if=showIssues>
       <ul>
         <li>
-          <p><strong>joshual_l</strong> Enable performance measuring in production, at the user's request</p>
+          <p><strong>joshual_l</strong>{{ issues }}</p>
         </li>
         <li>
           <p><strong>Camile</strong>It's Impossible to Rename an Inherited Slot</p>
@@ -37,7 +37,7 @@ import Toggler from '../Toggler/Toggler.vue';
 import FeedContainer from '@/slots/FeedContainer.vue';
 import Avatar from '../../Avatar/Avatar.vue'
 export default {
-  name: "feed-element",
+  name: "FeedElement",
   props: {
     title: {
       type: String,
@@ -48,6 +48,12 @@ export default {
     desc_title: {
       type: String,
     },
+    userData: {
+      type: Object,
+    },
+    issues: {
+      default: ''
+    }
   },
   data() {
     return {
@@ -61,6 +67,9 @@ export default {
     handler(issuesStatus) {
       issuesStatus ? this.showIssues = true : this.showIssues = false
     }
+  },
+  created() {
+    console.log(this.userData);
   }
 }
 </script>

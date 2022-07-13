@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "toggler-toggler",
+  name: "GitogramToggler",
   emits: ['test'],
   data() {
     return {

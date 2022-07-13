@@ -10,6 +10,7 @@
 .avatar_flex {
   display: flex;
   justify-content: flex-start;
+  flex-direction: row;
   align-items: center;
   gap: .46rem;
   padding: 3% 0 1% 0;
